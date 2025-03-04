@@ -21,16 +21,18 @@ export const metadata = {
     title: "Manamana Nihongo | Japanese Language School",
     description:
       "Learn Japanese with Joaquim & Eevee 先生. Get conversational in just 6 months with 1h/day.",
+    url: "https://manamananihongo.minnastudy.com",
+    siteName: "Manamana Nihongo",
+    locale: "en_US",
+    type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg", // This should be a full URL in production
         width: 1200,
         height: 630,
         alt: "Manamana Nihongo",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
