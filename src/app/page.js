@@ -118,7 +118,7 @@ const JapaneseTeacherWebsite = () => {
 
           {/* CTA Button */}
           <a
-            href="#trial"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfnSgcmQmfRlfp7FkCyKBOtP8Yh_Klau2Ol8RK13UfSgAPnqA/viewform"
             className="bg-teal-600 text-white px-4 py-2 rounded-md shadow-sm hover:bg-teal-700 transition duration-300"
           >
             Free Trial
@@ -155,7 +155,7 @@ const JapaneseTeacherWebsite = () => {
                 Join the Waitlist
               </a>
               <a
-                href="#about"
+                href="https://www.instagram.com/p/DFkY4uFydKx/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
                 className="bg-white text-gray-800 hover:bg-gray-100 font-medium px-6 py-3 rounded-md text-center transition duration-300"
               >
                 Learn More
