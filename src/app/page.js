@@ -76,7 +76,7 @@ const JapaneseTeacherWebsite = () => {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           {/* Logo */}
           <img
-            src="/logo.png"
+            src="/navlogo.png"
             alt="Manamana Logo"
             className="h-16"
             style={{ height: "80px", width: "auto" }}
