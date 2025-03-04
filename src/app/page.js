@@ -75,18 +75,15 @@ const JapaneseTeacherWebsite = () => {
       <nav className="sticky top-0 z-50 bg-white shadow-md">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="h-10 w-10 bg-red-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">間</span>
-            </div>
-            <div>
-              <div className="font-bold text-teal-800 text-xl">manamana</div>
-              <div className="text-xs text-gray-600">craft your japanese</div>
-            </div>
-          </div>
+          <img
+            src="/logo.png"
+            alt="Manamana Logo"
+            className="h-16"
+            style={{ height: "80px", width: "auto" }}
+          />
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-6">
+          {/* <div className="hidden md:flex items-center space-x-6">
             <a
               href="#home"
               className="text-gray-700 hover:text-teal-600 font-medium"
@@ -117,7 +114,7 @@ const JapaneseTeacherWebsite = () => {
             >
               Contact
             </a>
-          </div>
+          </div> */}
 
           {/* CTA Button */}
           <a
@@ -131,18 +128,18 @@ const JapaneseTeacherWebsite = () => {
 
       {/* Hero Banner Section */}
       <section id="home" className="relative bg-gray-900 text-white py-20">
-        {/* Background Image */}
+        {/* Background I */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30 z-0"
-          style={{ backgroundImage: `url('/api/placeholder/1600/500')` }}
+          style={{ backgroundImage: `url('/banner.png')` }}
         >
-          {/* Nara, Japan image would go here */}
+          {/* Nara, Japan I would go here */}
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Learn Japanese with Joaquim & Eevee 先生
+              Learn Japanese with Joaquim & Eevee
             </h1>
             <p className="text-xl mb-6">
               Get conversational in Japanese in just 6 months with only 1 hour
@@ -150,7 +147,7 @@ const JapaneseTeacherWebsite = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://forms.google.com"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfnSgcmQmfRlfp7FkCyKBOtP8Yh_Klau2Ol8RK13UfSgAPnqA/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 py-3 rounded-md text-center transition duration-300"
@@ -172,7 +169,7 @@ const JapaneseTeacherWebsite = () => {
       <section id="resources" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* PDF Cover Image */}
+            {/* PDF Cover I */}
             <div className="md:w-1/3 flex justify-center">
               <div className="max-w-xs rounded-lg overflow-hidden shadow-lg">
                 <img
@@ -212,7 +209,7 @@ const JapaneseTeacherWebsite = () => {
         </div>
       </section>
 
-      {/* Testimonial Image Carousel Section */}
+      {/* Testimonial I Carousel Section */}
       <section id="testimonials" className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-teal-800">
@@ -393,7 +390,7 @@ const JapaneseTeacherWebsite = () => {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30 z-0"
-          style={{ backgroundImage: `url('/api/placeholder/1600/400')` }}
+          style={{ backgroundImage: `url('/banner.png')` }}
         >
           {/* Another Nara, Japan image would go here */}
         </div>
@@ -408,7 +405,7 @@ const JapaneseTeacherWebsite = () => {
               months!
             </p>
             <a
-              href="https://forms.google.com"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfnSgcmQmfRlfp7FkCyKBOtP8Yh_Klau2Ol8RK13UfSgAPnqA/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 py-3 rounded-md inline-block transition duration-300"
@@ -420,90 +417,106 @@ const JapaneseTeacherWebsite = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-10">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            {/* Logo and Info */}
-            <div className="mb-6 md:mb-0">
-              <div className="flex items-center space-x-2 mb-2">
-                <div className="h-8 w-8 bg-red-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">間</span>
-                </div>
-                <div className="font-bold text-xl">manamana</div>
-              </div>
-              <div className="flex items-center text-gray-300 text-sm">
+      <footer className="bg-gray-900 text-gray-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="col-span-1 md:col-span-2">
+              <img
+                src="/icon.png"
+                alt="Manamana Logo"
+                className="h-16"
+                style={{ height: "80px", width: "auto" }}
+              />
+              <p className="text-xs text-gray-400 mb-2">craft your japanese</p>
+              <p className="mb-4">
+                Learn Japanese with Joaquim & Eevee. Get conversational in just
+                6 months with only 1 hour per day.
+              </p>
+              <div className="flex items-center text-gray-300 text-sm mb-4">
                 <MapPin className="h-4 w-4 mr-1" />
                 <span>Nara, Japan 🦌</span>
               </div>
             </div>
 
-            {/* Links */}
-            <div className="flex flex-wrap gap-x-8 gap-y-2 mb-6 md:mb-0 justify-center">
-              <a
-                href="#home"
-                className="hover:text-teal-300 transition duration-300"
-              >
-                Home
-              </a>
-              <a
-                href="#about"
-                className="hover:text-teal-300 transition duration-300"
-              >
-                About
-              </a>
-              <a
-                href="#courses"
-                className="hover:text-teal-300 transition duration-300"
-              >
-                Courses
-              </a>
-              <a
-                href="#resources"
-                className="hover:text-teal-300 transition duration-300"
-              >
-                Resources
-              </a>
-              <a
-                href="#contact"
-                className="hover:text-teal-300 transition duration-300"
-              >
-                Contact
-              </a>
-            </div>
+            {/* <div>
+              <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a className="hover:text-white" href="#home">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-white" href="#about">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-white" href="#courses">
+                    Courses
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-white" href="#resources">
+                    Resources
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-white" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div> */}
 
-            {/* Social Icons */}
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="h-10 w-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-teal-600 transition duration-300"
-              >
-                <span className="sr-only">Instagram</span>
-                {/* Instagram icon would go here */}
-                <div className="h-5 w-5">📷</div>
-              </a>
-              <a
-                href="#"
-                className="h-10 w-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-teal-600 transition duration-300"
-              >
-                <span className="sr-only">Twitter</span>
-                {/* Twitter icon would go here */}
-                <div className="h-5 w-5">🐦</div>
-              </a>
-              <a
-                href="#"
-                className="h-10 w-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-teal-600 transition duration-300"
-              >
-                <span className="sr-only">YouTube</span>
-                {/* YouTube icon would go here */}
-                <div className="h-5 w-5">📺</div>
-              </a>
+            <div>
+              <h4 className="text-white font-semibold mb-4">Contact</h4>
+              <ul className="space-y-2">
+                <li>
+                  <div className="flex space-x-4 mt-4">
+                    <a
+                      href="https://www.tiktok.com/@mananamana_nihongo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white"
+                    >
+                      TikTok
+                    </a>
+                    <a
+                      href="https://www.instagram.com/manamana_nihongo/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white"
+                    >
+                      Instagram
+                    </a>
+                    <a
+                      href="https://x.com/manamananihongo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white"
+                    >
+                      X
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
+          <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
             <p>
               &copy; {new Date().getFullYear()} manamana Japanese School. All
               rights reserved.
+            </p>
+            <p className="mt-2">
+              Website made by{" "}
+              <a
+                href="https://www.minnastudy.com"
+                className="text-blue-400 hover:underline"
+              >
+                minnastudy.com
+              </a>
             </p>
           </div>
         </div>
